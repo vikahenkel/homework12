@@ -6,11 +6,19 @@ public class Main {
         Book amore = new Book("Amore", 2016, günzburg);
         Book dance = new Book("Dance", 1998, michel);
 
-        System.out.println(amore.getTitle()+ " " + amore.getYearOfPublication()+ " " + amore.getAuthor().getName()+ " "+ amore.getAuthor().getSurname()+ " ");
-        System.out.println(dance.getTitle()+ " " + dance.getYearOfPublication()+ " " + dance.getAuthor().getName()+ " "+ dance.getAuthor().getSurname() + " ");
+        System.out.println(amore.getTitle() + " " + amore.getYearOfPublication() + " " + amore.getAuthor().getName() + " " + amore.getAuthor().getSurname() + " ");
+        System.out.println(dance.getTitle() + " " + dance.getYearOfPublication() + " " + dance.getAuthor().getName() + " " + dance.getAuthor().getSurname() + " ");
 
         amore.setYearOfPublication(2018);
 
         System.out.println("amore.getYearOfPublication() = " + amore.getYearOfPublication());
+    }
+
+    private static void print(Book book){
+        System.out.println(book.toString());
+    }
+
+    private static void print (Author author){
+        System.out.println(author.toString());
     }
 }
